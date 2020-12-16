@@ -72,6 +72,8 @@ app.delete('/mensagens/:id', async (req, res) => {
 });
 
 app.listen(port, () => {
+  // console.info('Servidor rodando em http://localhost:3000.'); 
+  // Note abaixo a troca do tipo de aspas para poder usar a variavel no interior do print
   console.info(`Servidor rodando em http://localhost:${port}.`);
 });
 
