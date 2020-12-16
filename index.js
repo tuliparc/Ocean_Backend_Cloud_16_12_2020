@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 // Create, Read (All or Single), Update, Delete
 // Criar, Ler (Tudo ou Individual), Atualizar e Remover
 
-const db = client.db('ocean_bancodados_15_12_2020');
+const db = client.db('ocean_bancodados_16_12_2020');
 const mensagens = db.collection('mensagens');
 
 // [CREATE] - Criar uma mensagem
