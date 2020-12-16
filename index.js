@@ -10,9 +10,9 @@ const connectionString = 'mongodb://localhost:27017/';
 
 console.info('Conectando ao banco de dados...');
 
-/*const client = await mongodb.MongoClient.connect(connectionString, {
-  useUnifiedTopology: true
-});*/
+//const client = await mongodb.MongoClient.connect(connectionString, {
+//  useUnifiedTopology: true
+//});
 
 const app = express();
 
