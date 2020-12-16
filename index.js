@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('mongodb');
 
-const port = process.env.PORT || 3000; 
+const port = process.env.PORT || 3000;
 
 (async () => {
 
@@ -10,9 +10,9 @@ const connectionString = 'mongodb://localhost:27017/';
 
 console.info('Conectando ao banco de dados...');
 
-//const client = await mongodb.MongoClient.connect(connectionString, {
-//  useUnifiedTopology: true
-//});
+/*const client = await mongodb.MongoClient.connect(connectionString, {
+  useUnifiedTopology: true
+});*/
 
 const app = express();
 
@@ -71,10 +71,8 @@ app.delete('/mensagens/:id', async (req, res) => {
   res.send('Mensagem foi excluída com sucesso!');
 });
 
-app.listen(3000, () => {
-  // console.info('Servidor rodando em http://localhost:3000.'); 
-  console.info(`Servidor rodando em http://localhost:${port}.`); // detalhe do uso de crase no lugar das aspas simples
+app.listen(port, () => {
+  console.info(`Servidor rodando em http://localhost:${port}.`);
 });
-  
 
 })();
